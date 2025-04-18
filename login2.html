@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>정보입력 양식</title>
+  <style>
+    body {
+      font-family: 'Malgun Gothic', sans-serif;
+      margin: 40px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 700px;
+      border: 1px solid #ccc;
+    }
+
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      vertical-align: middle;
+    }
+
+    .section-title {
+      background-color: #f3f8ff;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 95%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn {
+      padding: 6px 10px;
+      background-color: white;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .footer-btns {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .footer-btns button {
+      padding: 8px 18px;
+      margin-left: 10px;
+      font-size: 14px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-prev {
+      border: 1px solid #ccc;
+      background-color: white;
+    }
+
+    .btn-next {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .small-text {
+      font-size: 11px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <tr><td colspan="3" class="section-title">기본정보 입력</td></tr>
+  <tr>
+    <td>아이디</td>
+    <td><input type="text" placeholder="아이디 입력"></td>
+    <td><button class="btn">중복확인</button></td>
+  </tr>
+  <tr>
+    <td>비밀번호</td>
+    <td colspan="2"><input type="password" placeholder="비밀번호 입력"></td>
+  </tr>
+  <tr>
+    <td>비밀번호 확인</td>
+    <td colspan="2"><input type="password" placeholder="비밀번호 재입력"></td>
+  </tr>
+
+  <tr><td colspan="3" class="section-title">개인정보 입력</td></tr>
+  <tr>
+    <td>이름</td>
+    <td colspan="2"><input type="text" value="위드시스템"></td>
+  </tr>
+  <tr>
+    <td>이메일</td>
+    <td><input type="email" value="ceo@withsystem.com"></td>
+    <td><button class="btn">이메일인증</button></td>
+  </tr>
+  <tr>
+    <td>이메일 수신 동의</td>
+    <td colspan="2">
+      <label><input type="checkbox"> 이메일 수신 동의</label><br>
+      <div class="small-text">※ 수신거부 시 일부 서비스에 제한이 있을 수 있습니다. 비밀번호 초기화 메일 수신 등에 반드시 필요한 정보이므로 정확히 이메일 주소를 입력해주세요.</div>
+    </td>
+  </tr>
+  <tr>
+    <td>휴대전화번호</td>
+    <td colspan="2"><input type="text" placeholder="휴대전화번호 입력"></td>
+  </tr>
+  <tr>
+    <td>SMS 수신 동의</td>
+    <td colspan="2">
+      <label><input type="checkbox"> SMS 수신 동의</label><br>
+      <div class="small-text">※ 수신거부 시 일부 서비스에 제한이 있을 수 있습니다.</div>
+    </td>
+  </tr>
+</table>
+
+<div class="footer-btns">
+  <button class="btn-prev">이전 단계</button>
+  <button class="btn-next">다음 단계</button>
+</div>
+
+</body>
+</html>
